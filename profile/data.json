@@ -1,0 +1,61 @@
+{
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "You",
+      "x": 2.5,
+      "y": 2,
+      "size": 40
+    },
+    {
+      "id": "n1",
+      "label": "American Red Cross",
+      "x": 3,
+      "y": 0,
+      "size": 15
+    },
+    {
+      "id": "n2",
+      "label": "Nature Conservancy",
+      "x": -1,
+      "y": 3,
+      "size": 10
+    },
+    {
+      "id": "n3",
+      "label": "Doctors without Borders",
+      "x": 1,
+      "y": 5,
+      "size": 10
+    },
+    {
+      "id": "n4",
+      "label": "Wounded Warrior Project",
+      "x": 4,
+      "y": 6,
+      "size": 10
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "source": "n0",
+      "target": "n1"
+    },
+    {
+      "id": "e1",
+      "source": "n0",
+      "target": "n2"
+    },
+    {
+      "id": "e2",
+      "source": "n0",
+      "target": "n3"
+    },
+    {
+      "id": "e3",
+      "source": "n0",
+      "target": "n4"
+    }
+  ]
+}
