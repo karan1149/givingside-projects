@@ -3102,12 +3102,12 @@
 /* Header */
 
 	#header {
-		padding: 5em 5em 1em 5em ;
-		text-align: center;
+		padding: 0em 1em 1em 1em ;
 	}
 
 		#header h1 {
-			margin: 0 0 0.25em 0;
+			margin: 0 0 0.1em 0;
+            float:left;
 		}
 
 		#header p {
@@ -3116,11 +3116,11 @@
 		}
 
 		#header.alt {
-			padding: 7em 5em 4em 5em ;
+			padding: 1em 1em 3.5em 1em ;
 		}
 
 			#header.alt h1 {
-				font-size: 3.25em;
+				font-size: 2em;
 			}
 
 			#header.alt > * {
@@ -3135,6 +3135,8 @@
 				opacity: 1;
 			}
 
+/*
+
 			#header.alt .logo {
 				-moz-transition: opacity 1.25s ease, -moz-transform 0.5s ease;
 				-webkit-transition: opacity 1.25s ease, -webkit-transform 0.5s ease;
@@ -3145,14 +3147,17 @@
 				-ms-transition-delay: 0s;
 				transition-delay: 0s;
 				display: block;
-				margin: 0 0 1.5em 0;
+				margin: 0 0 0 0;
 			}
+*/
 
 				#header.alt .logo img {
 					display: block;
-					margin: 0 auto;
-					max-width: 10%;
+					margin: 0 1em 0 0;
+					max-width: 4%;
+                    float:left;
 				}
+/*
 
 		@media screen and (max-width: 1280px) {
 
@@ -3226,6 +3231,7 @@
 				}
 
 		}
+*/
 
 		body.is-loading #header.alt > * {
 			opacity: 0;
