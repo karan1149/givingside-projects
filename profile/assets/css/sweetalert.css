@@ -172,7 +172,7 @@ body.stop-scrolling {
     opacity: 0;
     visibility: hidden; }
   .sweet-alert button {
-    background-color: #8CD4F5;
+    background-color: #1E3548;
     color: white;
     border: none;
     box-shadow: none;
@@ -201,6 +201,9 @@ body.stop-scrolling {
     .sweet-alert button[disabled] {
       opacity: .6;
       cursor: default; }
+      .sweet-alert button.confirm {
+        background-color: #2fe9f8 !important;
+      }
     .sweet-alert button.confirm[disabled] {
       color: transparent; }
       .sweet-alert button.confirm[disabled] ~ .la-ball-fall {
