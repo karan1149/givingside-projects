@@ -6,7 +6,7 @@ sigma.parsers.json('data.json', {
   },
   function(s) {
     s.bind('clickNode', function(e) {
-     alert(e.data.node.label);
+     swal(e.data.node.label);
       // s.refresh();
     });
 
