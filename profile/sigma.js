@@ -2870,7 +2870,7 @@
     //          "source", "target", "default"
     edgeColor: 'source',
     // {number} Defines the minimal edge's arrow display size.
-    minArrowSize: 0,
+    minArrowSize:0,
     // {string}
     font: 'arial',
     // {string} Example: 'bold'
@@ -2957,7 +2957,7 @@
     //          Available values: "inside", "outside"
     scalingMode: 'inside',
     // {number} The margin to keep around the graph.
-    sideMargin: .2,
+    sideMargin: .1,
     // {number} Determine the size of the smallest and the biggest node / edges
     //          on the screen. This mapping makes easier to display the graph,
     //          avoiding too big nodes that take half of the screen, or too
@@ -2990,14 +2990,14 @@
     eventsEnabled: true,
     // {number} Defines by how much multiplicating the zooming level when the
     //          user zooms with the mouse-wheel.
-    zoomingRatio: 1.7,
+    zoomingRatio: 1.5,
     // {number} Defines by how much multiplicating the zooming level when the
     //          user zooms by double clicking.
-    doubleClickZoomingRatio: 2.2,
+    doubleClickZoomingRatio: 1.7,
     // {number} The minimum zooming level.
-    zoomMin: 0.0625,
+    zoomMin: 0.3,
     // {number} The maximum zooming level.
-    zoomMax: 2,
+    zoomMax: 1,
     // {number} The duration of animations following a mouse scrolling.
     mouseZoomDuration: 200,
     // {number} The duration of animations following a mouse double click.
