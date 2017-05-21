@@ -116,12 +116,15 @@ var nodesInfo = [
   },
   {
     "label": "Nature Conservancy",
+    "url": "images/nature-conservancy.gif"
   },
   {
     "label": "Doctors without Borders",
+    "url": "images/doctors-without-borders.png"
   },
   {
-    "label": "Wounded Warrior Project"
+    "label": "Wounded Warrior Project",
+    "url": "images/wounded-warrior.jpeg"
   }
 ];
 
@@ -140,7 +143,7 @@ nodesInfo.forEach(function(node){
     url: nodesInfo[0].url,
     x: 0,
     y: 0,
-    size: 1.5
+    size: 1
   });
 
  // push nonprofit nodes to graph
