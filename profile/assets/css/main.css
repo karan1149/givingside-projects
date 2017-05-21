@@ -1652,9 +1652,10 @@
 
 /* Type */
 
+/*this is the p text for the footer - specifies color and background color*/
 	body {
 		background-color: #eef2f2;
-		color: rgba(255, 255, 255, 0.65);
+		color: #636363;
 	}
 
 	body, input, select, textarea {
@@ -1847,8 +1848,10 @@
 		color: #ffffff;
 	}
 
+/*this is the h2 text for the footer - specifies color and background color
+  only affects text not in the middle section*/
 	h1, h2, h3, h4, h5, h6 {
-		color: #BCC0C0;
+		color: #636363;
 	}
 
 	blockquote {
@@ -1988,14 +1991,15 @@
 
 		}
 
+/*this is the button in the footer*/
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
 	button,
 	.button {
 		background-color: transparent;
-		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
-		color: #ffffff !important;
+		box-shadow: inset 0 0 0 1px #636360;
+		color: #636360 !important;
 	}
 
 		input[type="submit"]:hover,
@@ -2410,13 +2414,14 @@
 			border-color: rgba(255, 255, 255, 0.35);
 		}
 
+/*icons in the footer - icon.alt*/
 	.icon.alt {
-		border-color: rgba(255, 255, 255, 0.35);
-		color: #ffffff;
+		border-color: #636360;
+		color: #636360;
 	}
 
 		.icon.alt:hover {
-			background-color: rgba(255, 255, 255, 0.075);
+			background-color: #BCC0c0;
 		}
 
 		.icon.alt:active {
@@ -3757,7 +3762,7 @@
 			#footer {
 				padding: 4em 3em 2em 3em ;
 				display: block;
-				margin: 0 0 3em 0;
+				margin: 0 0 0 0;
 				width: 100%;
 			}
 
