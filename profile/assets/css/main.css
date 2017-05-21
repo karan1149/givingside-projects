@@ -2003,7 +2003,7 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: rgba(255, 255, 255, 0.075);
+			background-color: #2FE9F8;
 		}
 
 		input[type="submit"]:active,
@@ -2011,7 +2011,7 @@
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: rgba(255, 255, 255, 0.2);
+			background-color: #2fe9f8;
 		}
 
 		input[type="submit"].icon:before,
