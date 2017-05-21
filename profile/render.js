@@ -202,28 +202,6 @@ var s;
        }
 
 
-
-
-
-        // sigma.parsers.json('data.json', {
-        //
-        //   settings: {
-        //     defaultNodeColor: '#ec5148'
-        //   },
-        //   renderer: {
-        //     container: 'container',
-        //     type: 'canvas'
-        //   },
-        //   },
-        //   function(s) {
-        //     s.bind('clickNode', function(e) {
-        //       if (e.data.node.id != "n0")
-        //         swal(e.data.node.label);
-        //       // s.refresh();
-        //     });
-        //
-        //
-        // });
      }
    );
  });
