@@ -3755,7 +3755,7 @@
 		@media screen and (max-width: 1280px) {
 /* Adjust footer size here - media screen 980px*/
 			#footer {
-				padding: 3em 0em 1em 4em ;
+				padding: 3em 0em 0em 0em ;
 			}
 
 		}
@@ -3820,7 +3820,7 @@
 			font-family: "Avenir Next";
 			font-weight: normal;
 			font-size: 2.25em;
-			margin-bottom: 0;
+			margin: 0 0 0 0;
 		}
 
 		#pitch-2{
@@ -3828,6 +3828,7 @@
 			font-family: "Avenir Next";
 			font-weight: lighter;
 			font-size: 1.5em;
+			margin: 0 0 0 0;
 		}
 
 		#copy-text{
