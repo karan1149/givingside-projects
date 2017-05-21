@@ -166,51 +166,8 @@ nodesInfo.forEach(function(node){
      size: Math.random()
    });
 
-   console.log(g.nodes);
-   console.log(g.edges);
 
- // Now that's the renderer has been implemented, let's generate a graph
- // to render:
- // var i,
- //     s,
- //     img,
- //     N = 100,
- //     E = 500,
- //     g = {
- //       nodes: [],
- //       edges: []
- //     },
- //     loaded = 0,
- //     colors = [
- //       '#617db4',
- //       '#668f3c',
- //       '#c6583e',
- //       '#b956af'
- //     ];
- //
- // // Generate a random graph, with ~30% nodes having the type "image":
- // for (i = 0; i < N; i++) {
- //   img = Math.random() >= 0.7;
- //   g.nodes.push({
- //     id: 'n' + i,
- //     label: 'Node ' + i,
- //     type: img ? 'image' : 'def',
- //     url: img ? urls[Math.floor(Math.random() * urls.length)] : null,
- //     x: Math.random(),
- //     y: Math.random(),
- //     size: Math.random(),
- //     color: colors[Math.floor(Math.random() * colors.length)]
- //   });
- // }
- //
- // for (i = 0; i < E; i++)
- //   g.edges.push({
- //     id: 'e' + i,
- //     source: 'n' + (Math.random() * N | 0),
- //     target: 'n' + (Math.random() * N | 0),
- //     size: Math.random()
- //   });
-
+var s;
  // Then, wait for all images to be loaded before instanciating sigma:
  urls.forEach(function(url) {
    sigma.canvas.nodes.image.cache(
