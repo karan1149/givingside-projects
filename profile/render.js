@@ -177,7 +177,7 @@ var s;
    sigma.canvas.nodes.image.cache(
      url,
      function() {
-       if (++loaded === urls.length)
+       if (++loaded === urls.length){
          // Instantiate sigma:
          s = new sigma({
              graph: g,
@@ -192,8 +192,15 @@ var s;
                  defaultNodeColor: '#2fe9f8'
              },
 
-           }
-         );
+           });
+               s.bind('clickNode', function(e) {
+                 if (e.data.node.id != "n0")
+                   swal(e.data.node.label);
+                 // s.refresh();
+               });
+
+       }
+
 
 
 
@@ -220,9 +227,3 @@ var s;
      }
    );
  });
-
- s.bind('clickNode', function(e) {
-       if (e.data.node.id != "n0")
-         swal(e.data.node.label);
-       // s.refresh();
-     });
