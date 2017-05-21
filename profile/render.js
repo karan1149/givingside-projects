@@ -207,7 +207,7 @@ var s;
         //   },
         //   function(s) {
         //     s.bind('clickNode', function(e) {
-        //       if (e.data.node.label != "You")
+        //       if (e.data.node.id != "n0")
         //         swal(e.data.node.label);
         //       // s.refresh();
         //     });
@@ -217,3 +217,9 @@ var s;
      }
    );
  });
+
+ s.bind('clickNode', function(e) {
+       if (e.data.node.id != "n0")
+         swal(e.data.node.label);
+       // s.refresh();
+     });
