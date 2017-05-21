@@ -99,8 +99,7 @@ sigma.canvas.nodes.image = (function() {
 
 
 
- var s,
-     g = {
+ var g = {
        nodes: [],
        edges: []
      },
@@ -141,18 +140,20 @@ nodesInfo.forEach(function(node){
     url: nodesInfo[0].url,
     x: 0,
     y: 0,
-    size: 1.75
+    size: 1.5
   });
 
  // push nonprofit nodes to graph
  for (i = 1; i < nodesInfo.length; i++) {
+   var newX = Math.random() > .5 ? Math.random() + .75 : Math.random() - 1.75;
+   var newY = Math.random() > .5 ? Math.random() + .75 : Math.random() - 1.75;
    g.nodes.push({
      id: 'n' + i,
      label: nodesInfo[i].label,
      type: nodesInfo[i].url ? 'image' : 'def',
      url: nodesInfo[i].url,
-     x: Math.random() * 2 - 1,
-     y: Math.random() * 2 - 1,
+     x: newX,
+     y: newY,
      size: Math.random() * .5 + .25
    });
  }
@@ -176,19 +177,22 @@ var s;
        if (++loaded === urls.length)
          // Instantiate sigma:
          s = new sigma({
-           graph: g,
-           renderer: {
-             // IMPORTANT:
-             // This works only with the canvas renderer, so the
-             // renderer type set as "canvas" is necessary here.
-             container: 'container',
-             type: 'canvas'
-           },
-           settings: {
-               defaultNodeColor: '#ec5148'
-           },
+             graph: g,
+             renderer: {
+               // IMPORTANT:
+               // This works only with the canvas renderer, so the
+               // renderer type set as "canvas" is necessary here.
+               container: 'container',
+               type: 'canvas'
+             },
+             settings: {
+                 defaultNodeColor: '#2fe9f8'
+             },
 
-         });
+           }
+         );
+
+
 
 
         // sigma.parsers.json('data.json', {
