@@ -2997,7 +2997,7 @@
     // {number} The minimum zooming level.
     zoomMin: 0.3,
     // {number} The maximum zooming level.
-    zoomMax: 1,
+    zoomMax: .8,
     // {number} The duration of animations following a mouse scrolling.
     mouseZoomDuration: 200,
     // {number} The duration of animations following a mouse double click.
