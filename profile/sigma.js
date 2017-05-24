@@ -2865,7 +2865,7 @@
     // {string}
     defaultNodeColor: '#000',
     // {string}
-    defaultLabelSize: 17,
+    defaultLabelSize: 16,
     // {string} Indicates how to choose the edges color. Available values:
     //          "source", "target", "default"
     edgeColor: 'source',
@@ -2982,7 +2982,7 @@
     // {boolean}
     mouseEnabled: true,
     // {boolean}
-    mouseWheelEnabled: true,
+    mouseWheelEnabled: false,
     // {boolean}
     doubleClickEnabled: true,
     // {boolean} Defines whether the custom events such as "clickNode" can be
@@ -2997,7 +2997,7 @@
     // {number} The minimum zooming level.
     zoomMin: 0.3,
     // {number} The maximum zooming level.
-    zoomMax: 1,
+    zoomMax: .8,
     // {number} The duration of animations following a mouse scrolling.
     mouseZoomDuration: 200,
     // {number} The duration of animations following a mouse double click.

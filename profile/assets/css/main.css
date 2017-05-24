@@ -10,8 +10,8 @@
 /* Reset */
 
 #container {
-	min-width: 90%;
-	height: 400px;
+	min-width: 75%;
+	height: 450px;
 	position: relative;
 	right: 50%
 }
