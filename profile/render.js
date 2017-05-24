@@ -149,8 +149,8 @@ nodesInfo.forEach(function(node){
  // push nonprofit nodes to graph
  for (i = 1; i < nodesInfo.length; i++) {
    var rads = ((i - 1) / (nodesInfo.length - 1)) * 2 * Math.PI;
-   var newX = 4 * Math.cos(rads) + Math.random() * .6 - .3;
-   var newY = 4 * Math.sin(rads) + Math.random() * .6 - .3;
+   var newX = 6.5 * Math.cos(rads + .4 * Math.random() - .2) + Math.random() * .6 - .3;
+   var newY = 4 * Math.sin(rads + .4 * Math.random() - .2) + Math.random() * .6 - .3;
   //  var newX = Math.random() > .5 ? Math.random() + .75 : Math.random() - 1.75;
   //  var newY = Math.random() > .5 ? Math.random() + .75 : Math.random() - 1.75;
    g.nodes.push({
