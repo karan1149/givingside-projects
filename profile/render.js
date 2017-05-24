@@ -155,7 +155,7 @@ nodesInfo.forEach(function(node){
   //  var newY = Math.random() > .5 ? Math.random() + .75 : Math.random() - 1.75;
    g.nodes.push({
      id: 'n' + i,
-     label: nodesInfo[i].label,
+     label: nodesInfo[i].label.length >= 25 ? nodesInfo[i].label.substring(0, 22) + "...": nodesInfo[i].label,
      type: nodesInfo[i].url ? 'image' : 'def',
      url: nodesInfo[i].url,
      x: newX,
