@@ -2967,7 +2967,7 @@
     //          of the nodes will be their size.
     minEdgeSize: 0.5,
     maxEdgeSize: 1,
-    minNodeSize: 1,
+    minNodeSize: 4,
     maxNodeSize: 50,
 
 
