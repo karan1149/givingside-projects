@@ -198,7 +198,10 @@ var s;
            });
                s.bind('clickNode', function(e) {
                  if (e.data.node.id != "n0")
-                   swal(e.data.node.label);
+                   swal({
+                     title: e.data.node.label,
+                     text: "Nonprofit description here"
+                   });
                  // s.refresh();
                });
 
