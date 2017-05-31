@@ -205,7 +205,7 @@ var s;
                  if (e.data.node.id != "n0")
                    swal({
                      title: e.data.node.label,
-                     text: "Nonprofit description here"
+                     text: e.data.node.desc ? e.data.node.desc : ""
                    });
                  // s.refresh();
                });
