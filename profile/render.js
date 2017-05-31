@@ -216,3 +216,41 @@ var s;
      }
    );
  });
+
+ /* Render cards */
+for (var i = 0; i < nodesInfo.length; i++){
+  appendCard(nodesInfo[i].label, nodesInfo[i].desc, nodesInfo[i].url, "#");
+}
+
+
+
+ function appendCard(title, description, imageUrl, siteUrl){
+   var cardContainer = $("#cards-container");
+   console.log(cardContainer.length);
+   /*
+   <div class="card small">
+      <div class="card-image">
+        <img src="images/thea_photo.jpg">
+        <span class="card-title">Nonprofit title</span>
+      </div>
+      <div class="card-content">
+        <p>I am a very simple card. I am good at containing small bits of information.
+        I am convenient because I require little markup to use effectively.</p>
+      </div>
+      <div class="card-action">
+        <a href="#">Visit site</a>
+      </div>
+    </div>
+    */
+
+   var cardMarkup = '<div class="card small"><div class="card-image"><img src="';
+   cardMarkup += imageUrl;
+   cardMarkup += '"><span class="card-title">';
+   cardMarkup += title;
+   cardMarkup += '</span> </div><div class="card-content"><p>';
+   cardMarkup += description;
+   cardMarkup += '</p></div><div class="card-action"> <a href="';
+   cardMarkup += siteUrl;
+   cardMarkup += '">Visit site</a></div></div>';
+   cardContainer.append(cardMarkup);
+ }
