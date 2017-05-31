@@ -160,7 +160,8 @@ nodesInfo.forEach(function(node){
      url: nodesInfo[i].url,
      x: newX,
      y: newY,
-     size: Math.random() * .5 + .25
+     size: Math.random() * .5 + .25,
+     desc: nodesInfo[i].desc
    });
  }
 
