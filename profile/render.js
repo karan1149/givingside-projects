@@ -112,19 +112,23 @@ var nodesInfo = [
   },
   {
     "label": "American Red Cross",
-    "url": 'images/american-redcross.jpeg'
+    "url": 'images/american-redcross.jpeg',
+    "desc": "American Red Cross description that is enticing and very interesting. It tells you many things."
   },
   {
     "label": "Nature Conservancy",
-    "url": "images/nature-conservancy.gif"
+    "url": "images/nature-conservancy.gif",
+    "desc": "Nature description"
   },
   {
     "label": "Doctors without Borders",
-    "url": "images/doctors-without-borders.png"
+    "url": "images/doctors-without-borders.png",
+    "desc": "Doctors description here that is long and meaningful"
   },
   {
     "label": "Wounded Warrior Project",
-    "url": "images/wounded-warrior.jpeg"
+    "url": "images/wounded-warrior.jpeg",
+    "desc": "Wounder Warrior description that tells you a lot about the nonprofit"
   }
 ];
 
