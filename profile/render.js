@@ -243,9 +243,9 @@ for (var i = 1; i < nodesInfo.length; i++){
     </div>
     */
 
-   var cardMarkup = '<div class="card small"><div class="card-image"><img src="';
+   var cardMarkup = '<div class="card small"><div class="card-image"><div><div class="card-image-overlay"></div><img src="';
    cardMarkup += imageUrl;
-   cardMarkup += '"><span class="card-title">';
+   cardMarkup += '"></div><span class="card-title">';
    cardMarkup += title;
    cardMarkup += '</span> </div><div class="card-content"><p>';
    cardMarkup += description;
