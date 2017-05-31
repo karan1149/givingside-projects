@@ -218,7 +218,7 @@ var s;
  });
 
  /* Render cards */
-for (var i = 0; i < nodesInfo.length; i++){
+for (var i = 1; i < nodesInfo.length; i++){
   appendCard(nodesInfo[i].label, nodesInfo[i].desc, nodesInfo[i].url, "#");
 }
 
