@@ -4432,6 +4432,8 @@ small {
 
 .card.small, .card.medium, .card.large {
   position: relative;
+  display:inline-block;
+  margin: 10px;
 }
 
 .card.small .card-image, .card.medium .card-image, .card.large .card-image {
@@ -4456,8 +4458,8 @@ small {
 }
 
 .card.small {
-  height: 300px;
-  max-width:35%;
+  height: 350px;
+  max-width:30%;
 }
 
 .card.medium {
@@ -4544,10 +4546,11 @@ small {
   left: 0;
   max-width: 100%;
   padding: 24px;
+  text-shadow: 1px 1px 2px black;
 }
 
 .card .card-content {
-  padding: 24px;
+  padding: 10px;
   border-radius: 0 0 2px 2px;
 }
 
@@ -4578,8 +4581,7 @@ small {
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
-  color: #ffab40;
-  margin-right: 24px;
+  color: #2fe9f8;
   transition: color .3s ease;
   text-transform: uppercase;
 }
