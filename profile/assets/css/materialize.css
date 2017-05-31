@@ -4435,6 +4435,7 @@ small {
   display:inline-block;
   margin: 10px;
   overflow: hidden;
+  float: left;
 }
 
 .card.small .card-image, .card.medium .card-image, .card.large .card-image {
