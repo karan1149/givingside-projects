@@ -113,7 +113,8 @@ var nodesInfo = [
   {
     "label": "American Red Cross",
     "url": 'images/american-redcross.jpeg',
-    "desc": "American Red Cross description that is enticing and very interesting. It tells you many things."
+    "desc": "American Red Cross description that is enticing and very interesting. It tells you many things.",
+    "siteUrl": "http://redcross.org"
   },
   {
     "label": "Nature Conservancy",
@@ -219,14 +220,13 @@ var s;
 
  /* Render cards */
 for (var i = 1; i < nodesInfo.length; i++){
-  appendCard(nodesInfo[i].label, nodesInfo[i].desc, nodesInfo[i].url, "#");
+  appendCard(nodesInfo[i].label, nodesInfo[i].desc, nodesInfo[i].url, nodesInfo[i].siteUrl);
 }
 
 
 
  function appendCard(title, description, imageUrl, siteUrl){
    var cardContainer = $("#cards-container");
-   console.log(cardContainer.length);
    /*
    <div class="card small">
       <div class="card-image">
@@ -253,4 +253,19 @@ for (var i = 1; i < nodesInfo.length; i++){
    cardMarkup += siteUrl;
    cardMarkup += '">Visit site</a></div></div>';
    cardContainer.append(cardMarkup);
+ }
+
+
+ /* View graph and view cards functions */
+ function viewGraph(){
+   var cardsContainer = $("#cards-container");
+   console.log(cardsContainer);
+   cardsContainer.css("display", "none");
+   $("#container").css("display", "block");
+ }
+
+ function viewCards(){
+   var cardsContainer = $("#cards-container");
+   cardsContainer.css("display", "block");
+   $("#container").css("display", "none");
  }
