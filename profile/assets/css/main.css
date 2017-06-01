@@ -3033,6 +3033,7 @@
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
+		padding: 15px 15px 15px 30px;
 		/*margin: 0 0 2em 0;*/
 	}
 	.spotlight h2 {
@@ -3077,6 +3078,7 @@
 				-ms-flex-direction: column-reverse;
 				flex-direction: column-reverse;
 				text-align: center;
+
 			}
 
 				.spotlight .content {
@@ -3116,7 +3118,7 @@
 		}
 
 	.spotlight .image {
-		border-color: rgba(255, 255, 255, 0.35);
+		border-color: rgba(150, 150, 150, 0.2);
 	}
 
 /* Header */
@@ -3273,9 +3275,9 @@
 		transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		background-color: #ffffff;
 		color: #636363;
-		position: absolute;
+		/*position: absolute;*/
 		width: 64em;
-		max-width: calc(100% - 4em);
+		/*max-width: calc(100% - 4em);*/
 		padding: 1em;
 		background-color: #f7f7f7;
 		border-top-left-radius: 0.25em;
@@ -3313,9 +3315,9 @@
 			border-bottom-color: #dddddd;
 		}
 
-		#nav + #main {
+		/*#nav + #main {
 			padding-top: 2em;
-		}
+		}*/
 
 		#nav ul {
 			margin: 0;
