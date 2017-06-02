@@ -257,15 +257,31 @@ for (var i = 1; i < nodesInfo.length; i++){
 
 
  /* View graph and view cards functions */
- function viewGraph(){
-   var cardsContainer = $("#cards-container");
-   console.log(cardsContainer);
-   cardsContainer.css("display", "none");
-   $("#container").css("display", "block");
- }
+ function toggleView(){
+   var toggleButton = $("#toggle");
+   if (toggleButton.hasClass("graph-view")){
+     var cardsContainer = $("#cards-container");
+     cardsContainer.css("display", "block");
+     $("#container").css("display", "none");
+     toggleButton.text("Switch to Graph View");
 
- function viewCards(){
-   var cardsContainer = $("#cards-container");
-   cardsContainer.css("display", "block");
-   $("#container").css("display", "none");
+   } else {
+     var cardsContainer = $("#cards-container");
+     cardsContainer.css("display", "none");
+     $("#container").css("display", "block");
+     toggleButton.text("Switch to Card View");
+   }
+   toggleButton.toggleClass("graph-view");
  }
+ // // function viewGraph(){
+ //   var cardsContainer = $("#cards-container");
+ //   console.log(cardsContainer);
+ //   cardsContainer.css("display", "none");
+ //   $("#container").css("display", "block");
+ // // }
+ // //
+ // // function viewCards(){
+ //   var cardsContainer = $("#cards-container");
+ //   cardsContainer.css("display", "block");
+ //   $("#container").css("display", "none");
+ // // }
